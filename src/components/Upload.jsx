@@ -46,7 +46,7 @@ const Upload = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:5000/media/upload', payload, {
+      const res = await axios.post('https://taskcompletionbackend.onrender.com/media/upload', payload, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data'

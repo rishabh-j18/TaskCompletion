@@ -22,7 +22,7 @@ const Feed = () => {
   const fetchVideos = async (pageNumber = 1) => {
     try {
       setLoading(true);
-      const res = await fetch(`http://localhost:5000/media/video?page=${pageNumber}`);
+      const res = await fetch(`https://taskcompletionbackend.onrender.com/media/video?page=${pageNumber}`);
       const result = await res.json();
 
       setVideos(result.data || []);

@@ -11,7 +11,7 @@ const MyProfile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/auth/profile', {
+        const res = await axios.get('https://taskcompletionbackend.onrender.com/auth/profile', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

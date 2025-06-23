@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
   const login = async ({ email, password }) => {
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/auth/login', { email, password });
+      const res = await axios.post('https://taskcompletionbackend.onrender.com/auth/login', { email, password });
       const { user, token } = res.data;
 
       setUser(user);
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
   const signup = async ({ name, email, password }) => {
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/auth/signup', { name, email, password });
+      const res = await axios.post('https://taskcompletionbackend.onrender.com/auth/signup', { name, email, password });
       return { success: true };
     } catch (err) {
       return {
