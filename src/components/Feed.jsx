@@ -98,6 +98,12 @@ const Feed = () => {
                   )}
                 </Box>
               </Box>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </Grid>
           ))}
         </Grid>
